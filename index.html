@@ -4,24 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 
 
     <title>pagina</title>
 
 </head> 
 <body>
-    <nav class="flex bg-black justify-between p-3">
-        <li> <h3 class="text-white">logo</h3></li>
-        
-        <li> <button class="p-3 rounded-xl bg-slate-100">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="carrito-icono">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-        </svg>
-        </button></li>
+    <nav class="flex bg-black justify-between items-center p-3 ">
+        <div>
+            <h3 class="text-white p-3">logo</h3>
+        </div>
+
+        <ul class="flex items-center gap-3 list-none m-0 p-0">
+            <li> 
+                <div class="m-0 p-0 border-b border-white hover:border-none">
+                    <h3 class="rounded-xl   text-white  font-bold  border-white   hover:bg-white hover:text-black  active:text-black  active:bg-white  p-3"> 
+                        inicio
+                    </h3>
+                </div> 
+            </li>
+
+            <li> 
+                <button class="relative p-4 rounded-xl text-white hover:bg-white hover:text-black  active:text-black  active:bg-white">
+                    
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24"  height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="carrito-icono" >
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
     </nav>
+
+    <header class="relative w-full h-[60vh]">
+        <img src="img/arseny-togulev-xsTE6vs3UVw-unsplash.jpg" alt="bmx" class="w-full h-full object-cover">
+        <div class="absolute inset-x-0  bg-gradient-to-t bottom-0 h-1/2 from-white to-transparent pointer-events-none"></div>
+    </header>
+
+        <div class="flex justify-center ">
+            <h1 class=" font-['Black_Ops_One'] border-b text-4xl">
+                productos
+                <div class="mb-1 border-b"></div>
+            </h1>
+        </div>
+        
+
+    
     
 </body>
 </html>
