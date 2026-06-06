@@ -1,3 +1,2 @@
-implmentacion de logo
-hero 
-ajustes nav
+ajustes de cards
+
