@@ -9,3 +9,6 @@ LOGO que vuelve al inicio
 
 
 - nuevas animacion en cards y ajustes boton para volver en detalle_united ajuste de imagen
+
+-no me saques la funcion del logo q me vuelve al inicio
+
