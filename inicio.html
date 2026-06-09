@@ -12,21 +12,25 @@
 </head>
 <body>
     <nav class="flex bg-black justify-between items-center p-2 ">
-        <div class="p-1">
+        <a 
+            href="inicio.html"
+            class="p-1">
             <img src="img/logo.png" alt="logo" class="h-16">
-        </div>
+        </a>
 
         <ul class="flex items-center gap-4 list-none m-0 p-0">
             <li>  
-                <div class="m-0 p-0">
-                    <h3 class="rounded-xl   text-white  font-bold   hover:bg-white hover:text-black  active:text-black  active:bg-white  p-2"> 
+                <div class="m-0 p-1.5 border-b border-white hover:border-none"> 
+                    <a 
+                        href="inicio.html"
+                        class="rounded-xl   text-white  font-bold   hover:bg-white hover:text-black  active:text-black  active:bg-white  p-2"> 
                         INICIO
-                    </h3>
+                    </a>
                 </div>
             </li>
 
             <li> 
-                <div class="m-0 p-1.5 border-b border-white hover:border-none">
+                <div class="m-0 p-0">
                     <a 
                         class="rounded-xl   text-white  font-bold   hover:bg-white hover:text-black  active:text-black  active:bg-white  p-2"
                         href="catalogo.html"> 
@@ -49,32 +53,32 @@
     </nav>
     <main class="grid grid-cols-1   md:grid-cols-2">
 
-        
-        <div class="relative group aspect-auto bg-black overflow-hidden" >
-
-            <div 
-                class=" flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10 text-white font-bold"> 
-                BICICLETAS
-                <button class=" p-3 bg-white text-black">
-                    <a href="catalogo.html">ver productos -></a>
-                </button> 
+        <div class="flex flex-col"> 
+            <div class="relative group aspect-auto bg-black overflow-hidden" >
+                <div 
+                    class=" flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10 text-white font-bold"> 
+                    BICICLETAS
+                    <button class=" p-3 bg-white text-black">
+                        <a href="catalogo.html">ver productos -></a>
+                    </button> 
+                </div>
+                <img class="object-cover transition-all duration-500 group-hover:blur-sm group-hover:opacity-40" src="img/bicicletas.jpg" alt="bicicletas">
             </div>
-            <img class="object-cover transition-all duration-500 group-hover:blur-sm group-hover:opacity-40" src="img/bicicletas.jpg" alt="bicicletas">
+
+            <div class="relative group aspect-auto bg-black overflow-hidden" >
+                <div 
+                    class=" flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10 text-white font-bold"> 
+                    RESPUESTOS
+                    <button class=" p-3 bg-white text-black">
+                        <a href="#">ver productos -></a>
+                    </button> 
+                </div>
+                <img class="object-cover transition-all duration-500 group-hover:blur-sm group-hover:opacity-40" src="img/respuestos.jpg" alt="respuestos">
+            </div>
         </div>
 
-        <div class="relative group aspect-auto bg-black overflow-hidden" >
-            <div 
-                class=" flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10 text-white font-bold"> 
-                RESPUESTOS
-                <button class=" p-3 bg-white text-black">
-                    <a href="#">ver productos -></a>
-                </button> 
-            </div>
-            <img class="object-cover transition-all duration-500 group-hover:blur-sm group-hover:opacity-40" src="img/respuestos.jpg" alt="respuestos">
-        </div>
 
-
-        <div class="relative group aspect-auto bg-black overflow-hidden col-span-2 " >
+        <div class="relative group aspect-auto bg-black overflow-hidden  " >
 
             <div 
                 class="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-10 text-white font-bold"> 
@@ -83,7 +87,7 @@
                     <a href="#">ver productos -></a>
                 </button> 
             </div>
-            <img class="object-cover transition-all duration-500 group-hover:blur-sm group-hover:opacity-40" src="img/prueba.jpg" alt="bicicletas">
+            <img class="object-cover transition-all duration-500 group-hover:blur-sm group-hover:opacity-40 h-full" src="img/prueba.jpg" alt="bicicletas">
         </div>
 
 
