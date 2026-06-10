@@ -13,4 +13,3 @@ LOGO que vuelve al inicio
 -no me saques la funcion del logo q me vuelve al inicio
 
 - que inicio bobo si no existe el inicio recien lo creo con razon cada vez que entraba seguia eso ahi y yo pensando que no se cambiaba la concha de tu madre 
-
