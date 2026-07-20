@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        .uk-navbar-container {
+            background-color: black !important;
+        }
+        .uk-navbar-nav > li > a {
+            color: white !important;
+        }
+    </style>
+    
+    
+    <title>Detalles United </title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <a href="inicio.html" class="uk-navbar-item">
+                <img src="img/logo.png" alt="logo" style="height: 60px;">
+            </a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="inicio.html">INICIO</a></li>
+                <li><a href="catalogo.html">CATALOGO</a></li>
+                <li>
+                    <a href="#" class="uk-navbar-item">
+                        <span uk-icon="cart"></span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="uk-text-center" style="padding: 20px 0;">
+        <h1 style="font-family: 'Black Ops One', cursive; font-size: 8vw; color: black; border-bottom: 2px solid black; display: inline-block;">
+            Ride:Bmx
+        </h1>
+    </div>
+    <div class="uk-text-center" style="background-color: #374151; padding: 24px;">
+        <h1 style="font-family: 'Black Ops One', cursive; color: white; font-size: 2rem;">
+            BICICLETA BMX UNITED RECRUIT JR. 18.5
+        </h1>
+    </div>
+    <div class="uk-grid-medium uk-child-width-1-2@m uk-margin-large" uk-grid>
+
+        <div>
+            <img id="imagen-principal" src="img/detalleUnited/BMXuniteddetalle1.webp" alt="BMX United" style="width: 100%; object-fit: cover; border-radius: 12px;">
+            <div style="display: flex; gap: 8px; margin-top: 16px;">
+                <img src="img/detalleUnited/BMXuniteddetalle1.webp" onclick="cambiarImagen(this)" style="width: 96px; height: 96px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #ccc;">
+                <img src="img/detalleUnited/DetalleUnited2.webp" onclick="cambiarImagen(this)" style="width: 96px; height: 96px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #ccc;">
+                <img src="img/detalleUnited/UniteDetalle3.webp" onclick="cambiarImagen(this)" style="width: 96px; height: 96px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #ccc;">
+            </div>
+            <button class="uk-button uk-button-secondary uk-width-1-1" style="margin-top: 16px; border-radius: 12px;">
+                Agregar al carrito
+            </button>
+        </div>
+    
+        <div>
+            <p class="uk-text-large uk-text-bold" style="color: black;">$1.500.000</p>
+            <p class="uk-text-small uk-text-muted">Precio sin impuestos $1.239.669</p>
+            <hr style="border-top: 1px solid #ccc; margin: 16px 0;">
+            <p class="uk-text-bold" style="color: black;">COLOR</p>
+            <p class="uk-text-muted">Gloss Blacktop</p>
+            <p class="uk-text-bold uk-margin-small-top" style="color: black;">TALLE</p>
+            <p class="uk-text-muted">18.5"</p>
+            <h3 class="uk-text-large uk-text-bold uk-margin-small-top" style="color: black;">Especificaciones</h3>
+            <ul class="uk-list uk-text-small uk-text-muted">
+                <li><span class="uk-text-bold">Rodado:</span> 20"</li>
+                <li><span class="uk-text-bold">Cuadro:</span> 1020 Hi Ten, 18.5"</li>
+                <li><span class="uk-text-bold">Horquilla:</span> Cromo Steerer Tube</li>
+                <li><span class="uk-text-bold">Manubrio:</span> 8.25" x 27" Hi Tensile</li>
+                <li><span class="uk-text-bold">Bielas:</span> 3PC 165MM, 8 Spline</li>
+                <li><span class="uk-text-bold">Ruedas:</span> Alloy 36H Single Wall</li>
+                <li><span class="uk-text-bold">Neumáticos:</span> 2.3"</li>
+                <li><span class="uk-text-bold">Color:</span> Gloss Blacktop</li>
+            </ul>
+        </div>
+    
+    </div>
+    
+    <script>
+        function cambiarImagen(miniatura) {
+            document.getElementById('imagen-principal').src = miniatura.src;
+        }
+    </script>
+    <footer class="uk-section" style="background-color: black; color: white;">
+        <div class="uk-container">
+            <div class="uk-grid-medium uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">Tienda</p>
+                    <ul class="uk-list">
+                        <li><a href="catalogo.html" style="color: white;">Catálogo</a></li>
+                        <li><a href="#" style="color: white;">Repuestos</a></li>
+                        <li><a href="#" style="color: white;">Medios de pago</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">Info</p>
+                    <ul class="uk-list">
+                        <li><a href="#" style="color: white;">Promociones</a></li>
+                        <li><a href="#" style="color: white;">Métodos de envío</a></li>
+                        <li><a href="#" style="color: white;">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">Legales</p>
+                    <ul class="uk-list">
+                        <li><a href="#" style="color: white;">Libro de quejas</a></li>
+                        <li><a href="#" style="color: white;">Defensa del consumidor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="uk-divider-muted">
+            <p class="uk-text-small uk-text-right" style="color: white;">© 2026 Ride Bmx. Todos los derechos reservados.</p>
+        </div>
+    </footer>
