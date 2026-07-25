@@ -15,36 +15,64 @@
         .uk-navbar-container {
             background-color: black !important;
         }
-        .uk-navbar-nav > li > a {
-            color: white !important;
-        }
-    </style>
-    
-    <style>
         .uk-card {
             transition: transform 0.3s ease;
         }
         .uk-card:hover {
             transform: scale(1.05);
         }
+        .uk-navbar-nav > li > a {
+            font-size: 16px !important;
+            font-weight: bold !important;
+            color: white !important;
+        }
+        .uk-navbar-item > span[uk-icon="cart"] > svg {
+            width: 28px !important;  
+            height: 28px !important; 
+        }
+        .uk-navbar-nav > li > a > span:hover {
+        background-color: white !important; 
+        color: black !important;            
+        border-radius: 0.75rem !important; 
+        padding: 0.375rem !important;
+        border: none !important;}
+        
     </style>
+    
+
 </head>
 <body>
-    <nav class="uk-navbar-container" uk-navbar>
+    <nav class="uk-navbar-container" uk-navbar style="padding:4px;">
         <div class="uk-navbar-left">
             <a href="inicio.html" class="uk-navbar-item">
                 <img src="img/logo.png" alt="logo" style="height: 60px;">
             </a>
         </div>
-        <div class="uk-navbar-right">
+
+        <div class="uk-navbar-right" style="margin-right: 4px;">
             <ul class="uk-navbar-nav">
-                <li><a href="inicio.html">INICIO</a></li>
-                <li class="uk-active"><a href="catalogo.html">CATALOGO</a></li>
+                <li class="uk-active"> 
+                    <a href="inicio.html">
+                        <span>
+                            INICIO
+                        </span>
+                    </a>
+                </li>
+                
                 <li>
-                    <a href="#" class="uk-navbar-item">
+                    <a href="catalogo.html">
+                        <span style="border-bottom: 2px white solid; padding: 0.375rem">
+                            CATALOGO
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="uk-navbar-item" >
                         <span uk-icon="cart"></span>
                     </a>
                 </li>
+                
             </ul>
         </div>
     </nav>
