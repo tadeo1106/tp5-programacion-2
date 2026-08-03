@@ -28,6 +28,32 @@
         border-radius: 0.75rem !important; 
         padding: 0.375rem !important;
         }
+        .uk-footer-link {
+            color: white !important;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        .uk-footer-link:hover {
+            color: #cbd5e1 !important;
+        }
+        .back-to-catalog {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            display: inline-flex;
+            transition: transform 0.2s ease;
+        }
+        .back-to-catalog:hover {
+            color: white;
+            transform: translateY(-50%) scale(1.08);
+        }
+        @media (min-width: 960px) {
+            .back-to-catalog {
+                left: 2rem;
+            }
+        }
     </style>
     
     
@@ -72,12 +98,18 @@
             Ride:Bmx
         </h1>
     </div>
-    <div class="uk-text-center" style="background-color: #374151; padding: 24px;">
-        <h1 style="font-family: 'Black Ops One', cursive; color: white; font-size: 2rem;">
+    <div class="uk-text-center uk-position-relative" style="background-color: #374151; padding: 24px;">
+        <a href="catalogo.html" class="back-to-catalog" aria-label="Volver al catálogo">
+            <svg width="40" height="36" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polyline points="60,0 20,55 60,110" fill="none" stroke="white" stroke-width="10" stroke-linecap="square"/>
+                <polyline points="100,0 60,55 100,110" fill="none" stroke="white" stroke-width="10" stroke-linecap="square"/>
+            </svg>
+        </a>
+        <h1 style="font-family: 'Black Ops One', cursive; color: white; font-size: 2rem; margin: 0; padding: 0 3.5rem;">
             BICICLETA BMX UNITED RECRUIT JR. 18.5
         </h1>
     </div>
-    <div class="uk-grid-medium uk-child-width-1-2@m uk-margin-large" uk-grid>
+    <div class="uk-grid-medium uk-child-width-1-2@m uk-margin-large" uk-grid style="padding: 0 2rem; margin-top: 2rem; margin-bottom: 3rem;">
 
         <div>
             <img id="imagen-principal" src="img/detalleUnited/BMXuniteddetalle1.webp" alt="BMX United" style="width: 100%; object-fit: cover; border-radius: 12px;">
@@ -91,16 +123,16 @@
             </button>
         </div>
     
-        <div>
-            <p class="uk-text-large uk-text-bold" style="color: black;">$1.500.000</p>
-            <p class="uk-text-small uk-text-muted">Precio sin impuestos $1.239.669</p>
-            <hr style="border-top: 1px solid #ccc; margin: 16px 0;">
-            <p class="uk-text-bold" style="color: black;">COLOR</p>
-            <p class="uk-text-muted">Gloss Blacktop</p>
-            <p class="uk-text-bold uk-margin-small-top" style="color: black;">TALLE</p>
-            <p class="uk-text-muted">18.5"</p>
-            <h3 class="uk-text-large uk-text-bold uk-margin-small-top" style="color: black;">Especificaciones</h3>
-            <ul class="uk-list uk-text-small uk-text-muted">
+        <div style="padding-left: 12px; padding-top: 8px;">
+            <p class="uk-text-large uk-text-bold" style="color: black; margin: 0 0 8px 0;">$1.500.000</p>
+            <p class="uk-text-small uk-text-muted" style="margin: 0 0 20px 0;">Precio sin impuestos $1.239.669</p>
+            <hr style="border-top: 1px solid #ccc; margin: 0 0 24px 0;">
+            <p class="uk-text-bold" style="color: black; margin: 0 0 6px 0;">COLOR</p>
+            <p class="uk-text-muted" style="margin: 0 0 16px 0;">Gloss Blacktop</p>
+            <p class="uk-text-bold" style="color: black; margin: 0 0 6px 0;">TALLE</p>
+            <p class="uk-text-muted" style="margin: 0 0 20px 0;">18.5"</p>
+            <h3 class="uk-text-large uk-text-bold" style="color: black; margin: 0 0 14px 0;">Especificaciones</h3>
+            <ul class="uk-list uk-text-small uk-text-muted" style="margin: 0; padding-left: 20px; line-height: 1.8;">
                 <li><span class="uk-text-bold">Rodado:</span> 20"</li>
                 <li><span class="uk-text-bold">Cuadro:</span> 1020 Hi Ten, 18.5"</li>
                 <li><span class="uk-text-bold">Horquilla:</span> Cromo Steerer Tube</li>
@@ -119,34 +151,59 @@
             document.getElementById('imagen-principal').src = miniatura.src;
         }
     </script>
-    <footer class="uk-section" style="background-color: black; color: white;">
+    <footer class="uk-section uk-padding-large" style="background-color: black; color: white;">
         <div class="uk-container">
-            <div class="uk-grid-medium uk-child-width-1-3@m" uk-grid>
+            <div class="uk-grid-medium uk-child-width-1-1@s uk-child-width-1-3@m" uk-grid>
                 <div>
-                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">Tienda</p>
-                    <ul class="uk-list">
-                        <li><a href="catalogo.html" style="color: white;">Catálogo</a></li>
-                        <li><a href="#" style="color: white;">Repuestos</a></li>
-                        <li><a href="#" style="color: white;">Medios de pago</a></li>
-                    </ul>
+                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">tienda</p>
+                    <div class="uk-flex uk-flex-column" style="gap: 0.5rem;">
+                        <a href="catalogo.html" class="uk-footer-link">Catálogo</a>
+                        <a href="#" class="uk-footer-link">Respuestos</a>
+                        <a href="#" class="uk-footer-link">Medios de pago</a>
+                    </div>
                 </div>
+
                 <div>
-                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">Info</p>
-                    <ul class="uk-list">
-                        <li><a href="#" style="color: white;">Promociones</a></li>
-                        <li><a href="#" style="color: white;">Métodos de envío</a></li>
-                        <li><a href="#" style="color: white;">Contacto</a></li>
-                    </ul>
+                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">info</p>
+                    <div class="uk-flex uk-flex-column" style="gap: 0.5rem;">
+                        <a href="#" class="uk-footer-link">Promociones</a>
+                        <a href="#" class="uk-footer-link">Métodos de envío</a>
+                        <a href="#" class="uk-footer-link">Contacto</a>
+                        <a href="#" class="uk-footer-link">Botón de arrepentimiento</a>
+                        <a href="#" class="uk-footer-link">Preguntas frecuentes</a>
+                        <a href="#" class="uk-footer-link">Política de cambios y devoluciones</a>
+                        <a href="#" class="uk-footer-link">Política de privacidad</a>
+                    </div>
                 </div>
+
                 <div>
-                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">Legales</p>
-                    <ul class="uk-list">
-                        <li><a href="#" style="color: white;">Libro de quejas</a></li>
-                        <li><a href="#" style="color: white;">Defensa del consumidor</a></li>
-                    </ul>
+                    <p class="uk-text-bold uk-text-uppercase" style="color: white;">legales</p>
+                    <div class="uk-flex uk-flex-column" style="gap: 0.5rem;">
+                        <a href="#" class="uk-footer-link">Libro de quejas y sugerencias</a>
+                        <a href="#" class="uk-footer-link">Defensa del consumidor</a>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1 uk-margin-medium-top">
+                    <div class="uk-flex uk-flex-middle uk-flex-wrap" style="gap: 1rem;">
+                        <a href="#" class="uk-footer-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM12 6.5C8.96243 6.5 6.5 8.96243 6.5 12C6.5 15.0376 8.96243 17.5 12 17.5C15.0376 17.5 17.5 15.0376 17.5 12C17.5 8.96243 15.0376 6.5 12 6.5ZM12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5ZM18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="uk-footer-link" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="40" height="40" style="display: block;">
+                                <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.205z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1 uk-margin-medium-top uk-padding-small uk-padding-remove-horizontal uk-border-top">
+                    <p class="uk-text-small uk-text-center uk-text-right@m" style="color: #9ca3af;">© 2026 UNDERSHOP. Todos los derechos reservados.</p>
                 </div>
             </div>
-            <hr class="uk-divider-muted">
-            <p class="uk-text-small uk-text-right" style="color: white;">© 2026 Ride Bmx. Todos los derechos reservados.</p>
         </div>
     </footer>
+</body>
+</html>
