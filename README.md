@@ -19,4 +19,6 @@ Este archivo documenta los cambios y el estado general del proyecto. Está ubica
 - [uikit/detalle_united.html] Se aumentó el espaciado de la descripción y las especificaciones para que se vea más despejada.
 - [uikit/detalle_united.html] Se ajustaron los márgenes laterales del contenido principal para que quede más aireado y parecido al diseño de Tailwind.
 - [uikit/detalle_united.html] Se agregó un botón de volver al catálogo, ubicado en la barra superior del título, con estilo de flecha y efecto hover.
+- Se agregó la el PDF `Frameworks_precentacion` en la raíz con material de presentación relacionado.
+- Se añadió un `Reporte_trabajo` en la raíz (documento con resumen y avance del TP).
 
